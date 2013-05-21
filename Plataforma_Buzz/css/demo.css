@@ -1,0 +1,37 @@
+body {
+	background-color:#000;
+	}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+.container_12{
+  background-color: #0C0;
+  background-repeat: repeat-y;
+  margin-bottom: 20px;
+ 
+}
+
+.container_12 {
+  background-image: url(../img/12_col.gif);
+}
+

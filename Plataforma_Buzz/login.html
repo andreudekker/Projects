@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+#apDiv1
+/*cajafondo*/
+ {
+	position:absolute;
+	width:473px;
+	height:308px;
+	z-index:1;
+	left: 348px;
+	top: 57px;
+	background-color: #CCCCCC;
+}
+#apDiv2
+/*tabla*/
+ {
+	position:absolute;
+	width:270px;
+	height:138px;
+	z-index:1;
+	left: 41px;
+	top: 39px;
+}
+#apDiv3 {
+	position:absolute;
+	width:227px;
+	height:83px;
+	z-index:1;
+	left: 124px;
+	top: 97px;
+}
+#apDiv4 {
+	position:absolute;
+	width:79px;
+	height:56px;
+	z-index:2;
+	left: 190px;
+	top: 15px;
+	font-size: 36px;
+}
+</style>
+<script type="text/javascript">
+
+function validar (forma)
+
+{
+	error=0;
+msg="";
+	if(forma.usuario.value=="")
+	{
+		msg=msg+"Digite un usuario.//";
+		error=1;
+	}
+      if (forma.clave.value =="")
+	  {
+		  msg=msg+"Digite una clave";
+		  error=1;
+	  }
+	if(error ==0) 
+	{
+		return true;
+	}
+	else
+	{
+		alert (msg); return false;
+	}
+}
+	
+	 </script>
+</head>
+
+<body>
+
+<div id="apDiv1">
+  <div id="apDiv3">
+    <form id="form1" name="form1" method="post" action="validar.php" onsubmit="return validar(this)">
+      <table width="200" border="0">
+        <tr>
+          <td width="77">Usuario</td>
+          <td width="113"><label for="textfield"></label>
+          <input type="text" name="usuario" id="usuario" /></td>
+        </tr>
+        <tr>
+          <td>Clave</td>
+          <td><label for="textfield2"></label>
+          <input type="password" name="clave" id="clave" /></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="btn_ok" id="btn_ok" value="Enviar" /></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="apDiv4"><p><center>LOGIN</p></div>
+</div>	
+</body>
+</html>
