@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="GuiaWP.ctrRecordatorios"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit = "clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+        <Grid x:Name="ContentReminder" Grid.Row="1"
+          Margin="10,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="82" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Titulo" Grid.Row="1" Margin="14,0,0,0" />
+            <TextBox x:Name="txtTitulo" Grid.Row="1" />
+            <TextBlock Text="Fecha" Grid.Row="2" Margin="14,0,0,0" />
+            <toolkit:DatePicker Grid.Row="3" x:Name="dpFecha" Height="60"
+                                FontSize="14" VerticalAlignment="Center"
+                                HorizontalAlignment="Right" />
+            <TextBlock Text="Hora" Grid.Row="4" Margin="14,0,0,0" />
+            <toolkit:TimePicker Grid.Row="5" x:Name="dpHora"
+                                Height="60" FontSize="14"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right" />
+            <TextBlock Text="Mensaje" Grid.Row="6" Margin="14,0,0,0" />
+            <TextBox x:Name="txtMensaje" Grid.Row="7" />
+            <Button Content="Guardar" Grid.Row="9" Height="72"
+                    Margin="14,5,247,0" x:Name="btnGuardar"
+                    VerticalAlignment="Top"
+					Padding="-3,0,10,0"
+				
+                    Click="btnGuardar_Click_1" />
+            <Button Content="Recordatorios" Grid.Row="9" Height="72"
+                    Margin="200,5,0,0" x:Name="btnRecordatorios"
+                    Padding="4,4,4,4"
+					VerticalAlignment="Top"
+                    Click="btnRecordatorios_Click_1"></Button>
+        </Grid>
+        </Grid>
+</UserControl>

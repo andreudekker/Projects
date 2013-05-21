@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{3df6bd1f-f34c-4273-9287-01a79b9dda50}" Title="RecGps" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Andres Bernal" Description="RecGps sumistra la localizacion y el curso de datos calculados desde su celular." Publisher="Italent" BitsPerPixel="32">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_NETWORKING" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="GuiaWPToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>RecGps</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>

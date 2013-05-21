@@ -1,0 +1,87 @@
+﻿<phone:PhoneApplicationPage xmlns:GuiaWP="clr-namespace:GuiaWP"  
+    x:Class="GuiaWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+ 
+        <!--Control Panorama-->
+        <controls:Panorama Title="Rec Gps" Margin="-10,0,10,0" >
+           
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="PanoramaBackground.png"/>
+            </controls:Panorama.Background>
+ 
+            <!--Elemento Panorama uno-->
+            <controls:PanoramaItem Header="Sitios">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <StackPanel>
+                    <TextBlock x:Name="lblEstado" Text= "estado de conex:" />
+                    <TextBlock x:Name="txtEstado" Text= "Serv Apagado:" />
+                    <TextBlock x:Name="lbllatitud" Text= "Latitud:" />                       
+                    <TextBlock x:Name="txtlatitud" Text= "" />
+                    <TextBlock x:Name="lbllongitud" Text= "longitud:" />
+                    <TextBlock x:Name="txtlongitud" Text= "" />
+                    <TextBlock x:Name="lbldist" Text= "distancia:" />
+                    <TextBlock x:Name="txtdist" Text= "" />
+                    <Grid Height="137" HorizontalAlignment="Center" Margin="60,0,61,0" Width="300">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="BTN_LOW" Grid.Column="0" Height="75" Width="75" Click="BTN_LOW_Click_1">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/img/low.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="BTN_STOP" Grid.Column="1" Height="75" Width="75" Click="BTN_STOP_Click_1">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/img/stop.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="BTN_HIGHT" Grid.Column="2" Height="75" Width="75" Click="BTN_HIGHT_Click_1">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/img/high.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+
+                    </Grid>
+                    <StackPanel HorizontalAlignment="Center">
+                        <Button x:Name="btnRecordar"
+                                Content="Recordar"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Width="222"
+                                Click="btnRecordar_Click_1">
+                            
+                            
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+
+            </controls:PanoramaItem>
+ 
+            <!--Elemento Panorama dos-->
+            <!--Use 'Orientation="Horizontal"' para habilitar un panel que dispuesto horizontalmente-->
+            <controls:PanoramaItem>
+               <GuiaWP:ctrRecordatorios />
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+</phone:PhoneApplicationPage>
