@@ -1,0 +1,328 @@
+
+/*a:link {text-decoration:none; color: #ffffff;} 
+a:visited {text-decoration:none; color:#FF3F00} 
+a:active {text-decoration:none; color:#ffffff; } 
+a:hover {text-decoration:underline; color:#FF3F00;} */
+	
+
+
+
+
+
+pre 
+{ 
+display:none 
+}
+
+.imagenredess 
+{
+ width: 15px;
+ height: 15px;	
+	
+}
+
+
+.logo
+{
+	color:#6F2C15;
+	font-family:"slatsnthings2" ;
+	font-size: 20px;
+
+	
+    
+}
+
+.pics 
+{ 
+	height: 232px; 
+	width: 232px; 
+	padding:0; margin:0; 
+	overflow: hidden 
+}
+.pics img 
+{ 
+	height: 200px; 
+	width: 600px; 
+	padding: 15px; 
+	border: 1px 
+	solid #ccc; 
+	background-color: #eee; 
+	top:0; 
+	left:0 
+}
+.pics img 
+{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+ .boton {
+   border-top: 1px solid #000000;
+   background: #d61313;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f70505), to(#d61313));
+   background: -webkit-linear-gradient(top, #f70505, #d61313);
+   background: -moz-linear-gradient(top, #f70505, #d61313);
+   background: -ms-linear-gradient(top, #f70505, #d61313);
+   background: -o-linear-gradient(top, #f70505, #d61313);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #fcfcfc;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   /*margin-left:145px;*/
+   margin-top:15px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.boton:hover {
+   border-top-color: #eb5e5e;
+   background: #eb5e5e;
+   color: #fafafa;
+   }
+.boton:active {
+   border-top-color: #520509;
+   background: #520509;
+   }
+   
+ @font-face{  /* logo*/ 
+	font-family: 'slatsnthings2';
+	font-style:normal;
+	font-weight: bold;
+	 src:url('../fuentes/slatsnthings2.ttf') format('truetype');
+	}
+
+
+@font-face 		/*titulo*/
+{ 
+	font-family: "Chunkfive"; 
+	font-style:normal;
+	font-weight: bold; 
+	src: url(../fuentes/Chunkfive.otf) format('opentype'); 
+
+}
+
+@font-face 		/*titulo*/
+{ 
+	font-family: "Inconsolata"; 
+	font-style:normal;
+	font-weight: bold; 
+	src: url(../fuentes/Inconsolata.otf) format('opentype'); 
+
+}
+
+
+#beta
+{
+	font-family:Tahoma;
+	font-size: 10px;
+	
+}
+#cuadro1
+{
+	
+	background-color: #2B2B2B;
+	height: 100px;
+}
+
+
+
+#cuadro2
+{
+	 
+		  
+	background-color: #2B2B2B;
+	height: 100px;
+ 
+	
+}
+
+#cuadro2 li
+{
+	
+	font-family:"Inconsolata"; 
+	display: inline;  
+	font-size:18px;  
+	margin-top:20px;
+	text-decoration: none;  
+	float:left;  
+
+}
+
+
+
+
+
+#cuadrorojo3
+{
+	background-color: #520509;
+	color:white;
+	font-family: Chunkfive;
+	height: 200px;
+
+
+	
+
+	
+}
+
+#cuadrorojo4
+{
+	background-color: #2B2B2B;
+	height: 50px;
+	
+}
+
+#cuadrorojo5
+{
+	background-color: #2B2B2B;
+	
+	
+	
+}
+
+#estrellas
+{
+
+}
+
+
+
+
+#logo
+{
+	color:#6F2C15;
+	font-family:"slatsnthings2" ;
+	font-size: 30px;
+}
+#luv
+{
+padding-left: 0px;	
+	
+}
+
+#mensaje
+{
+	color:#A4A4A4;
+	float: left;
+	font-family: Inconsolata;
+	font-size:15px;	
+	
+
+	
+	
+}
+
+
+#mitexto 
+{
+border: 1px solid #8bce57;
+float: left;
+width: 200px;
+height:30px;
+}
+
+ 
+
+#mitexto:hover 
+{
+border: 1px solid #70c52e;
+
+}
+			/*revisar mi boton y modificar*/
+#miboton {
+border-top: 1px solid #f79797;
+   background: #d66565;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9c3e3e), to(#d66565));
+   background: -webkit-linear-gradient(top, #9c3e3e, #d66565);
+   background: -moz-linear-gradient(top, #9c3e3e, #d66565);
+   background: -ms-linear-gradient(top, #9c3e3e, #d66565);
+   background: -o-linear-gradient(top, #9c3e3e, #d66565);
+   padding: 5.5px 11px;
+   -webkit-border-radius: 05px;
+   -moz-border-radius: 05px;
+   border-radius: 05px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 12px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#miboton:hover {
+   border-top-color: #782828;
+   background: #782828;
+   color: #ccc;
+   }
+#miboton:active {
+   border-top-color: #5c1b1b;
+   background: #5c1b1b;
+   }
+
+
+
+
+#pareja
+{
+	font-family: Chunkfive;
+	font-size: 30px;
+	color:#ffffff;
+}
+
+
+#redess li
+{
+	
+	display: inline; 
+	text-decoration:none;
+	padding-left: 50px;
+}
+
+#right { cursor: pointer }	
+
+#main h2 { text-align: center }
+
+#sweetspan
+{
+	margin-left:-90px;	
+}
+
+#luvspan
+{
+	padding-left: 140px;
+	
+}
+	
+
+
+#titulo 
+{
+	color:#FFFFFF;
+	font-family:"Chunkfive" ;
+	font-size: 30px;
+	padding-top:  -500px;
+	
+}
+
+#vota
+{
+	font-family:"Inconsolata"; 
+	font-size:23px;
+	padding-left: 100px;
+	padding-top: 15px;
+	
+	
+}
+
+
+
+

@@ -1,0 +1,515 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'SambaRegular';
+    src: url('../fuentes/Samba-webfont.eot');
+    src: url('../fuentes/Samba-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/Samba-webfont.woff') format('woff'),
+         url('../fuentes/Samba-webfont.ttf') format('truetype'),
+         url('../fuentes/Samba-webfont.svg#SambaRegular') format('svg');
+
+}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'DaysRegular';
+    src: url('../fuentes/Days-webfont.eot');
+    src: url('../fuentes/Days-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/Days-webfont.woff') format('woff'),
+         url('../fuentes/Days-webfont.ttf') format('truetype'),
+         url('../fuentes/Days-webfont.svg#DaysRegular') format('svg');
+
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'ArchitectsDaughterRegular';
+    src: url('../fuentes/ArchitectsDaughter-webfont.eot');
+    src: url('../fuentes/ArchitectsDaughter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/ArchitectsDaughter-webfont.woff') format('woff'),
+         url('../fuentes/ArchitectsDaughter-webfont.ttf') format('truetype'),
+         url('../fuentes/ArchitectsDaughter-webfont.svg#ArchitectsDaughterRegular') format('svg');
+
+}
+
+/*etiquetas*/
+a
+{
+	text-decoration:none;
+	color:#ff0000;
+}
+h1{
+	text-align:center;
+	padding-top:30px;
+	margin:0;
+	color:#333;
+	text-transform:uppercase;
+	font-size:22px;
+}
+
+img
+{
+	border:none;
+}
+
+ul li { 
+	display: inline; 
+       }
+
+
+/*clases*/
+
+.cboth
+{ 
+	clear: both; 
+}
+
+.fuente
+{
+	font-family: 'Courier New';
+	
+}
+.fleft
+ {
+      	float: left; 
+      	margin: 0 20px 0 0;
+ }
+.negrita
+{
+	font-weight:bold;
+}
+
+.slideshow
+ {
+	 height: 232px; 
+	 width: 232px; 
+	margin-left: 50px;
+}
+.slideshow img 
+{ 
+	padding: 15px; 
+	border: 1px 
+	solid #ccc; 
+	background-color: #eee; 
+}
+
+.wide
+ {
+        border-bottom: 1px #000 solid;
+        width: 4000px;
+  }
+     
+ 
+  .Tamano
+  {
+  	width: 200px;
+  	height: 200px;
+  }    
+  
+
+#algodelohecho
+{	
+	text-align: center;
+	font-size: 30px;
+	font-family: 'SambaRegular';
+}
+
+#andreu
+{
+	margin-left: 50px;		/*//centrar*/
+	min-width: 100px; 
+	min-height: 100px;
+}
+#andreutexto
+{
+	text-align: center;
+}
+#apellido
+{
+	color:#9AC4DD;
+	font-weight:  bolder;
+	font-size: 60px;
+	font-family: 'DaysRegular';
+	margin-top: -70px;
+}
+#barras
+{ 
+	margin: 0 auto	;
+	min-width: 240px; 
+	height: 240px;
+}
+#bombilla
+{
+	margin-left: 100px;
+	width:50px ;
+	height:50px;
+}
+#codigo
+{
+	margin-left: 100px;
+	width:50px ;
+	height:50px;
+}
+
+#contactofuente
+{
+	color:#6B4D7F;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+}
+
+#contactame
+{	
+	text-align: center;
+	font-size: 30px;
+	font-family: 'SambaRegular';
+	text-align: center;
+}
+#cuadrohistoria
+{
+	background-color:#809AAE;
+}
+#cuadroeducacion
+{
+	background-color:#809AAE;
+}
+#cuadrocontacto
+{
+	background-color: #6B4D7F;
+}
+
+#cuadroeducacion
+{
+ 	margin-left: -5px;
+ 	 width: 283px; 
+ 	 height: 160px;
+}
+
+#cuandodecodigo
+{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'SambaRegular';
+}
+.clsRecuadro
+{
+	position:relative;
+	display:inline-block;
+	background:#000;
+	height:300px;
+	width:250px;
+	border:solid 1px #333;
+	margin:10px;
+}
+			
+.clsImagen
+{
+	background:#000;
+	height:300px;
+	width:250px;
+}
+.clsDescripcion
+{
+	padding-top:10px;
+	position:absolute;
+	bottom:0;
+	background:#000;
+	height:auto; /* eliminar o dejar en auto para que se ajuste automaticamente */
+	display:none;
+	width:100%;
+}
+.clsDescripcion strong,.clsDescripcion p
+{
+	margin:0;
+	padding:3px;
+}
+.clsDescripcion strong
+{
+	text-transform:uppercase;
+}
+ .clsDescripcion a:hover
+ {
+	text-decoration:underline;
+}
+.clsRojo
+{
+	background:#ff0000;
+}
+.clsVerde
+{
+	background:#008000;
+}
+.clsAmarillo
+{
+	background:#ffff00;
+	color:#000;
+}
+
+#detalles
+{
+	color:#9AC4DD;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+}
+#divImagenes
+{
+		margin-top:20px;
+		text-align:center;
+		background:#000;
+}
+
+
+#divCali
+{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	background:#000;
+}
+#divCali img
+{
+	padding:20px;
+}
+
+
+#equipo
+{
+	margin-left: 100px;
+	width:50px ;
+	height:50px;
+}
+
+#estudio
+{
+	margin-left: 115px;
+	width:50px ;
+	height:50px;
+}
+
+#educacion
+{
+	color:#687888;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+}
+ 
+#grupo
+{
+	margin-left: 115px;
+	width:50px ;
+	height:50px;
+}
+
+
+#hola
+{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'SambaRegular';
+	margin-top: 40px;
+}
+
+#hola2
+{
+	margin-top: -40px;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'SambaRegular';
+
+}
+
+#main {
+        background: #fff;
+        margin: 0 auto;
+        padding: 30px;
+        width: 1000px;
+      }
+
+#micontactoimg
+{
+	margin-left: 100px;
+	width:70px ;
+	height:70px;
+}
+
+#sublime
+{
+	margin-left: 100px;
+	width:50px ;
+	height:50px;
+}
+
+
+#personales
+{
+	color:#9AC4DD;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+	margin-top: -50px;
+}
+
+
+#habilidades
+{
+	color:#877E8E;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 35px;
+	font-family: 'DaysRegular';
+}
+
+#personales
+{
+	color:#9AC4DD;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+}
+#personales2
+{
+	color:#877E8E;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+	margin-top: -40px;
+}
+
+#habilidadest
+{
+	color:#B58EA5;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+}
+#tecnicas
+{
+	color:#B58EA5;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+	margin-top: -40px;
+}
+#historia
+{
+	color:#809AAE;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+}
+
+#loqueseaprendiendo
+{	
+	text-align: center;
+	font-size: 30px;
+	font-family: 'SambaRegular';
+}
+#nolosabias
+{	
+	text-align: center;
+	font-size: 30px;
+	font-family: 'SambaRegular';
+
+}
+
+#nombre
+{
+	color:#9AC4DD;
+	font-weight:  bolder;
+	font-size: 60px;
+	font-family: 'DaysRegular';
+	margin-top: 30px;
+
+}
+
+#poderes
+{	
+	text-align: center;
+	font-size: 30px;
+	font-family: 'SambaRegular';
+}
+
+#ol_detalles
+{
+	color: white;
+	list-style: none;
+	font-size: 5px;
+	font-family: 'ArchitectsDaughterRegular';
+	padding-left: 10px;
+	background-color: #8FB2C9;
+}
+
+#ol_historia
+{
+	color: white;
+	list-style: none;
+	font-size: 5px;
+	font-family: 'ArchitectsDaughterRegular';
+	background-color:#809AAE;
+	padding-left: 10px;
+}
+
+#ol_educacion
+{
+
+	
+	color: white;
+	list-style: none;
+	font-size: 10px;
+	font-family: 'ArchitectsDaughterRegular';
+	background-color: #687888;
+	padding-left:10px; 
+
+}
+#ol_contacto
+{
+	color: white;
+	list-style: none;
+	font-size: 10px;
+	font-family: 'ArchitectsDaughterRegular';
+}
+
+#torta
+{ 
+	margin: 0 auto;
+	min-width: 240px; 
+	height: 240px;
+}
+
+#trabajo
+{
+	color:#809AAE;
+	text-align: center;
+	font-weight:  bolder;
+	font-size: 40px;
+	font-family: 'DaysRegular';
+	margin-top: -50px;	
+}
+
+#lenguajes
+{
+	margin-left: 115px;
+	width:50px ;
+	height:50px;
+}
+
+#img1_
+{
+height:200px;
+ width:200px; 
+}
+

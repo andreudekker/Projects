@@ -1,0 +1,87 @@
+/*etiquetas
+  identificadores
+  clases
+  En el body definir un tamaño de fuentes
+  unidades absoluta  px -pt
+  unidades relativas  % em
+  100% = 1em =16px=16pt
+  */
+
+aside #principal
+{
+	background:#1E6381;
+	border-radius:  .5em;
+	display:inline-block;
+	min-height: 200px;
+	width:60%;
+	vertical-align: top;
+}
+article
+{
+	background#011E30;
+	border.radius: .5em;
+	margin:.25em;
+	padding:.25em;
+}
+
+aside
+{
+	width:35%;
+}
+@font-face
+{
+      font-family: 'ClutcheeRegular';
+      src: url('../fuentes/Clutchee/clutchee-webfont.eot');
+      src: url('../fuentes/Clutchee/clutchee-webfont.eot?#iefix') format(' embedded-opentype'),
+      url('../fuentes/Clutchee/clutchee-webfont.woff') format('woff'),
+      url('../fuentes/Clutchee/clutchee-webfont.ttf') format('truetype'),
+      url('../fuentes/Clutchee/clutchee-webfont.svg#ClutcheeRegular') format('svg');
+   
+}
+
+body
+{
+	background:#212121 ;
+	color:white;
+	font-family: "ClutcheeRegular","helvetica","verdana";
+	font-size: 2em;
+	
+}
+div
+{
+	background:peru;
+	display: none;
+}
+
+
+h1
+{
+color:#f60;
+margin: .25em auto;
+text-align: center;
+-ms-text-shadow:5px  5px 10px rgba(255,255,255,.1);
+-moz-text-shadow:5px  5px 10px rgba(255,255,255,.1);
+-o-text-shadow:5px  5px 10px rgba(255,255,255,.1);
+-webkit-text-shadow:5px  5px 10px rgba(255,255,255,.1);
+text-shadow:5px  5px 10px rgba(255,255,255,.1);
+width: 90px;
+}
+
+footer,header ,nav
+{
+ background:#1E6381;
+ border-radius: .5em;
+ margin: 25em auto;
+ padding: .25em;
+ text-align: center;
+ max-width:80px;
+}
+
+#contenedor
+{
+	margin .25em auto;
+	padding:0;
+	background:salmon;
+	width:80%;
+	text-align: center;
+}
