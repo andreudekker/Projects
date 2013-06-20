@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Ring&Food</title>
+	
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/style.css" />
+	 
+	
+
+</head>
+<body>
+	
+<header>
+
+
+	<!--container-->
+	<div class="container_12">
+	<!-- grid1/logo-->	
+     		<div class="grid_7"><img src="imagenes/logoRing&Food.png" alt="logoRing&food" id="logoFood"></div>
+		<div class="grid_3">
+			<nav> <!--navegacion-->
+			        <div id="container">
+			            <!-- Login Starts Here -->
+			            <div id="loginContainer">
+			                <a href="#" id="loginButton"><span>Inicio</span><em></em></a>
+			                <div style="clear:both"></div>
+			                <div id="loginBox">                
+			                    <form id="loginForm">
+			                        <fieldset id="body">
+			                            <fieldset>
+			                                <label for="email">CorreoElectronico</label>
+
+			                                <input type="text" name="email" id="email" />
+			                            </fieldset>
+			                            <fieldset>
+			                                <label for="password">Contraseña</label>
+			                                <input type="password" name="password" id="password" />
+			                            </fieldset>
+			                            <input type="submit" id="login" value="Ingresar" />
+			                           	 
+			                        </fieldset>
+			                       	 <span><a href="#">Registrate</a></span>
+			                       	 <span><a href="#">Olvido su password</a></span>
+			                   
+			                    </form>
+			                </div>
+			            </div>
+			            <!-- Login Ends Here -->
+				</div>
+	 		</nav>
+		</div>
+		
+</header>  <!--fin header-->
+	
+<div id="centro">
+	<div class="container_12">
+		<div class="grid_6">
+			<img src="imagenes/salsaregistro.png" alt="salsaRong&food" id="imagenRegistro">
+		</div>
+		<div class="grid_6">
+			<form action="">
+				<fieldset id="fieldsetformularioregistro">
+					<legend id="fuenteCrearmicuenta">Crear mi cuenta</legend>
+					<label for="nombre" id="fuentenombreFrm">Nombre</label>
+					<input type="text" id="nombre"/>
+					
+					<label for="apellido" id="fuenteapellidoFrm">Apellido</label>
+					<input type="text" id="apellido"/>
+					
+					<label for="correoelectronico" id="fuentecorreoFrm">Correo electronico</label>
+					<input type="text" id="correo electronico">
+					
+					<label for="contraseña" id="fuentecontraseñaFrm">Contraseña</label>
+					<input type="text" id="contraseña">
+
+					<input type="button" value="Crear cuenta">
+
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>	<!--centro-->
+
+<footer>
+	<div class="container_12">
+		<div class="grid_4"  ><p class="Fuenteespecial"  id="fuenteSistema">Sistema creado por Andres Bernal</p></div>
+		<div class="grid_4" ><p class="Fuenteespecial" id="fuenteContacto"> Contacto: @andreudekker</p></div>
+		<div class="grid_4" ><p class="Fuenteespecial" id="fuenteDerechos"> Todos lo derechos reservados 2013</p></div>
+	</div>
+</footer>
+<!--js-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+<script src="js/login.js"></script>	
+</body>
+</html>
